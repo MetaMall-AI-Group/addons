@@ -1,0 +1,27 @@
+{
+  "name": "tunnel",
+  "version": "1.0.0",
+  "slug": "metamall-tunnel",
+  "description": "Remote access for Home Assistant",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "url": "https://github.com/MetaMall-AI-Group/addons/tree/master/tunnel",
+  "startup": "services",
+  "boot": "auto",
+  "image": "imdgr886/metamall-addon-tunnel",
+  "options": {
+    "frp_server": "",
+    "frp_server_port": 7000,
+    "frp_token": "",
+    "local_host": "homeassistant",
+    "local_port": 8123,
+    "http_domain": ""
+  },
+  "schema": {
+    "frp_server": "str",
+    "frp_server_port": "port",
+    "frp_token": "str",
+    "local_host": "str",
+    "local_port": "port",
+    "http_domain": "str?"
+  }
+}
