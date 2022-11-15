@@ -20,4 +20,5 @@ echo "local_ip = ${SERVER_LOCAL}" >> /frpc.ini
 echo "local_port = ${PORT_LOCAL}" >> /frpc.ini
 echo "custom_domains = ${HTTP_DOMAIN}" >> /frpc.ini
 
+bashio::log.info "Running frpc client..."
 exec /frpc -c /frpc.ini
