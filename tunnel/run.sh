@@ -8,7 +8,7 @@ TOKEN=$(jq --raw-output ".frp_token" $CONFIG_PATH)
 SERVER_LOCAL=$(jq --raw-output ".local_host" $CONFIG_PATH)
 PORT_LOCAL=$(jq --raw-output ".local_port" $CONFIG_PATH)
 HTTP_DOMAIN=$(jq --raw-output ".http_domain" $CONFIG_PATH)
-WEB_NAME = $(cat /proc/sys/kernel/random/uuid)
+WEB_NAME=$(cat /proc/sys/kernel/random/uuid)
 
 echo "" > /frpc.ini
 echo "[common]" >> /frpc.ini
