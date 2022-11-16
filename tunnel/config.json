@@ -1,6 +1,6 @@
 {
   "name": "tunnel",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "slug": "metamall-tunnel",
   "description": "Remote access for Home Assistant",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
